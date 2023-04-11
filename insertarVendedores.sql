@@ -1,0 +1,23 @@
+use proyecto_final;
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (1, 'Topicblab', '8258101420');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (2, 'Livefish', '7151407092');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (3, 'Tavu', '3246893004');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (4, 'Brightbean', '5943459235');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (5, 'Mynte', '9722315854');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (6, 'Jaxworks', '3490779096');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (7, 'Aivee', '8305102262');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (8, 'Oyonder', '8022761974');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (9, 'Skinte', '1823044034');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (10, 'Ainyx', '0049899384');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (11, 'Wordtune', '1487055994');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (12, 'Twitterwire', '9297758525');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (13, 'Meezzy', '1093380993');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (14, 'Fliptune', '2092044907');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (15, 'Fliptune', '2551875870');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (16, 'Kazu', '4480280049');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (17, 'Feednation', '2462535462');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (18, 'Yodel', '7995632819');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (19, 'Twiyo', '8794517126');
+insert into vendedor  (vendId , vendRazonSocial , vendCuit ) values (20, 'Jazzy', '4823766962');
+
+select * from vendedor;

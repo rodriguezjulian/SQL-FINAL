@@ -18,8 +18,9 @@ descripcionCondicionFiscal varchar(30),
 PRIMARY KEY (idCondicionFiscal)
 );
 
+INT NOTNNULL AUTO_INCREMENT
 CREATE TABLE cliente (
-idCliente int,
+idCliente INT NOTNNULL AUTO_INCREMENT,
 nombre varchar(30),
 cuit_Cuil int,
 idMetodoPago int,
@@ -71,8 +72,60 @@ foreign key (idOrden) references orden (idOrden)
 /*CREATE VIEW vw_Clientes AS -- creo la vista
 SELECT*
 FROM cliente;*/
+/*
 SELECT  * FROM vw_Clientes; -- llamo a la vista.
 CREATE OR REPLACE VIEW vw_Clientes AS
 (select idCliente, nombre, cuit_cuil
 from cliente);
 SELECT  * FROM vw_Clientes; -- llamo a la vista.
+*/
+use proyecto_final;
+DROP TABLE factura;
+DROP TABLE orden;
+DROP TABLE cliente;
+ 
+
+-- INT NOTNNULL AUTO_INCREMENT
+
+CREATE TABLE cliente (
+idCliente int,
+nombre varchar(30),
+cuit_Cuil bigint,
+idMetodoPago int,
+idZonaGeografica int, 
+idCondicionFiscal int,
+foreign key (idMetodoPago)  references metodosPago (id),
+foreign key (idZonaGeografica) references zonaGeografica (idZonaGeografica),
+foreign key (idCondicionFiscal) references condificionFiscal (idCondicionFiscal),
+PRIMARY KEY (idCliente)
+);
+
+
+-- DROP TABLE cliente;
+alter table cliente modify column cuit_Cuil BIGINT;
+alter table vendedor  modify column vendCuit  BIGINT;
+  
+TRUNCATE TABLE cliente;
+CREATE TABLE orden (
+idOrden int,
+idCliente int,
+idArticulo int,
+idVendedor int,
+unidades int,
+foreign key (idArticulo) references articulo (idArticulo),
+foreign key (idVendedor) references articulo (vendId),
+foreign key (idCliente) references cliente (idCliente),
+PRIMARY KEY (idOrden)
+);
+CREATE TABLE factura (
+idOrden int,
+stockReal int,
+costoEnvio int,
+valorTotal float,
+foreign key (idOrden) references orden (idOrden)
+);
+
+select * from condificionFiscal;
+select * from metodosPago;
+select * from zonaGeografica;
+select * from cliente;
