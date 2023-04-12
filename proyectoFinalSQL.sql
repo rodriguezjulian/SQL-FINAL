@@ -27,12 +27,25 @@ vendCuit bigint,
 PRIMARY KEY (vendId)
 );
 drop table vendedor;
+/*CREATE TABLE articulo (
+idArticulo int NOT NULL AUTO_INCREMENT,
+vendId int,
+descripcionArticulo varchar (50),
+color varchar(30),
+stock int,
+foreign key (vendId) references vendedor (vendId),
+PRIMARY KEY (idArticulo)
+);*/
+DROP table factura;
+DROP table orden;
+DROP table articulo;
 CREATE TABLE articulo (
 idArticulo int NOT NULL AUTO_INCREMENT,
 vendId int,
 descripcionArticulo varchar (50),
 color varchar(30),
 stock int,
+precio float,
 foreign key (vendId) references vendedor (vendId),
 PRIMARY KEY (idArticulo)
 );
@@ -83,5 +96,6 @@ foreign key (idOrden) references orden (idOrden)
 select * from vendedor;
 select * from articulo;
 select * from orden;
+select * from factura;
 
 

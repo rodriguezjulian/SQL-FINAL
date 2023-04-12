@@ -1,31 +1,79 @@
-INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades) VALUES
-  (1, 1, 11, 10),
-  (2, 2, 16, 8),
-  (3, 3, 20, 5),
-  (4, 4, 12, 3),
-  (5, 5, 18, 2),
-  (6, 6, 1, 9),
-  (7, 7, 15, 7),
-  (8, 8, 6, 2),
-  (9, 9, 20, 4),
-  (10, 10, 11, 6),
-  (11, 11, 20, 3),
-  (12, 12, 11, 5),
-  (13, 13, 12, 8),
-  (14, 14, 9, 1),
-  (15, 15, 9, 7),
-  (16, 16, 19, 2),
-  (17, 17, 6, 4),
-  (18, 18, 14, 3),
-  (19, 19, 12, 7),
-  (20, 20, 13, 5),
-  (21, 21, 17, 1),
-  (22, 22, 6, 8),
-  (23, 23, 1, 2),
-  (24, 24, 2, 6),
-  (25, 25, 13, 4),
-  (26, 26, 8, 9),
-  (27, 27, 13, 6),
-  (28, 28, 11, 8),
-  (29, 29, 12, 5),
-  (30, 30, 10, 7);
+-- Orden #1
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (1, 1, 11, 5);
+
+-- Orden #2
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (2, 2, 7, 1);
+
+-- Orden #3
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (3, 3, 14, 3);
+
+-- Orden #4
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (4, 4, 8, 2);
+
+-- Orden #5
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (5, 5, 18, 4);
+
+-- Orden #6
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (6, 6, 1, 6);
+
+-- Orden #7
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (7, 7, 13, 2);
+
+-- Orden #8
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (8, 8, 20, 1);
+
+-- Orden #9
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (9, 9, 9, 3);
+
+-- Orden #10
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (10, 10, 9, 2);
+
+-- Orden #11
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (11, 11, 10, 1);
+
+-- Orden #12
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (12, 12, 4, 2);
+
+-- Orden #13
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (13, 13, 8, 1);
+
+-- Orden #14
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (14, 14, 18, 3);
+
+-- Orden #15
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (15, 15, 9, 2);
+
+-- Orden #16
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (16, 16, 19, 1);
+
+-- Orden #17
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (17, 17, 2, 2);
+
+-- Orden #18
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (18, 18, 3, 1);
+
+-- Orden #19
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (19, 19, 12, 5);
+
+-- Orden #20
+INSERT INTO orden (idCliente, idArticulo, idVendedor, unidades)
+VALUES (20, 20, 18, 4);
