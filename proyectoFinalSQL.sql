@@ -1,5 +1,5 @@
 use proyecto_final;
-/*
+
 CREATE TABLE metodosPago (
 id int,
 metodo varchar(30),
@@ -17,7 +17,7 @@ idCondicionFiscal int,
 descripcionCondicionFiscal varchar(30),
 PRIMARY KEY (idCondicionFiscal)
 );
-*/
+
 -- aca le saque la zona geografica al vendedor, creo que estaba de mas. A futuro viendo como se desarrolla veo de platear
 -- una relacion entre la zona del vendedor, la zona del comprador y el costo de envio.
 CREATE TABLE vendedor (
@@ -26,19 +26,7 @@ vendRazonSocial varchar(50),
 vendCuit bigint,
 PRIMARY KEY (vendId)
 );
-drop table vendedor;
-/*CREATE TABLE articulo (
-idArticulo int NOT NULL AUTO_INCREMENT,
-vendId int,
-descripcionArticulo varchar (50),
-color varchar(30),
-stock int,
-foreign key (vendId) references vendedor (vendId),
-PRIMARY KEY (idArticulo)
-);*/
-DROP table factura;
-DROP table orden;
-DROP table articulo;
+
 CREATE TABLE articulo (
 idArticulo int NOT NULL AUTO_INCREMENT,
 vendId int,
@@ -93,9 +81,9 @@ foreign key (idOrden) references orden (idOrden)
 -- select * from metodosPago;
 -- select * from zonaGeografica;
 -- select * from cliente;
-select * from vendedor;
-select * from articulo;
-select * from orden;
-select * from factura;
+-- select * from vendedor;
+-- select * from articulo;
+-- select * from orden;
+-- select * from factura;
 
 
