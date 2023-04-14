@@ -61,13 +61,15 @@ foreign key (idVendedor) references articulo (vendId),
 foreign key (idCliente) references cliente (idCliente),
 PRIMARY KEY (idOrden)
 );
-
+drop table factura;
 CREATE TABLE factura (
-idOrden int NOT NULL AUTO_INCREMENT,
-stockReal int,
+idFactura int NOT NULL AUTO_INCREMENT,
+idOrden int,
+stockRealAFacturar int,
 costoEnvio int,
 valorTotal float,
-foreign key (idOrden) references orden (idOrden)
+foreign key (idOrden) references orden (idOrden),
+PRIMARY KEY (idFactura) -- tuve que definirla como Pk para que me deje crear la tabla
 );
 
 /*DROP TABLE factura;
