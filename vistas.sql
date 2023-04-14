@@ -52,6 +52,18 @@ ON O.idArticulo   = A.idArticulo
 order by idOrden asc;
 ;
 
+CREATE VIEW vw_metodosPago  AS
+SELECT id ,metodo ,descripcion 
+FROM metodosPago ;
+
+CREATE VIEW vw_zonaGeografica   AS
+SELECT idZonaGeografica ,descripcionZonaGeografica 
+FROM zonaGeografica ;
+
+CREATE VIEW vw_condificionFiscal   AS
+SELECT idCondicionFiscal  ,descripcionCondicionFiscal  
+FROM condificionFiscal ;
+
 
 
 
@@ -59,8 +71,9 @@ SELECT  * FROM vw_ClientesV3;
 SELECT  * FROM vw_VendedoresV1;
 SELECT  * FROM vw_ArticulosV1;
 SELECT  * FROM vw_ordenes;
-
-
+SELECT  * FROM vw_metodosPago;
+SELECT  * FROM vw_zonaGeografica;
+SELECT  * FROM vw_condificionFiscal;
 /*DROP VIEW vw_ClientesV3;
 DROP VIEW vw_VendedoresV1;
 DROP VIEW vw_ArticulosV1;

@@ -65,7 +65,9 @@ drop table factura;
 CREATE TABLE factura (
 idFactura int NOT NULL AUTO_INCREMENT,
 idOrden int,
-stockRealAFacturar int,
+stockAfacturar int,
+-- stockSolicitado int,
+-- stockReal int,
 costoEnvio int,
 valorTotal float,
 foreign key (idOrden) references orden (idOrden),
@@ -86,6 +88,6 @@ PRIMARY KEY (idFactura) -- tuve que definirla como Pk para que me deje crear la 
 -- select * from vendedor;
 -- select * from articulo;
 -- select * from orden;
--- select * from factura;
+select * from factura;
 
 
