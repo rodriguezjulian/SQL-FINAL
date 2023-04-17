@@ -64,8 +64,15 @@ CREATE VIEW vw_condificionFiscal   AS
 SELECT idCondicionFiscal  ,descripcionCondicionFiscal  
 FROM condificionFiscal ;
 
-
-
+CREATE VIEW vw_facturas AS
+SELECT F.idFactura , F.idOrden,A.descripcionArticulo ,O.unidades,F.stockAfacturar , A.precio,F.costoEnvio , F.valorTotal
+FROM factura AS F
+INNER JOIN orden AS O
+ON F.idOrden = O.idOrden
+INNER JOIN articulo AS A
+ON A.idArticulo  = O.idArticulo
+order by idFactura asc;
+;
 
 SELECT  * FROM vw_ClientesV3;
 SELECT  * FROM vw_VendedoresV1;
@@ -74,10 +81,12 @@ SELECT  * FROM vw_ordenes;
 SELECT  * FROM vw_metodosPago;
 SELECT  * FROM vw_zonaGeografica;
 SELECT  * FROM vw_condificionFiscal;
+SELECT  * FROM vw_facturas;
 /*DROP VIEW vw_ClientesV3;
 DROP VIEW vw_VendedoresV1;
 DROP VIEW vw_ArticulosV1;
-DROP VIEW  vw_ordenes;*/
+DROP VIEW  vw_ordenes;
+DROP VIEW  vw_facturas;*/
 
 
 -- ============================================================================================================================================================
