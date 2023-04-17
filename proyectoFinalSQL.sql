@@ -66,8 +66,6 @@ CREATE TABLE factura (
 idFactura int NOT NULL AUTO_INCREMENT,
 idOrden int,
 stockAfacturar int,
--- stockSolicitado int,
--- stockReal int,
 costoEnvio int,
 valorTotal float,
 foreign key (idOrden) references orden (idOrden),

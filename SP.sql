@@ -10,7 +10,7 @@ END$$
 
 -- LLAMADA AL SP
 CALL ordenar_clientes('nombre', 'ASC');
-CALL ordenar_clientes('idMetodoPago', 'DESC');*/
+CALL ordenar_clientes('idMetodoPago', 'DESC');
 
 DELIMITER $$
 
