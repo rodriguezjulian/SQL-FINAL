@@ -18,3 +18,7 @@ insert into vendedor  (vendRazonSocial , vendCuit ) values ('Zoonder', '01007361
 insert into vendedor  (vendRazonSocial , vendCuit ) values ('Gevee', '9842290565');
 insert into vendedor  (vendRazonSocial , vendCuit ) values ('Meedoo', '1856106527');
 insert into vendedor  (vendRazonSocial , vendCuit ) values ('Vipe', '0509162509');
+
+
+
+insert into vendedor  (vendRazonSocial , vendCuit ) values ('Voonte', '3189459878');
