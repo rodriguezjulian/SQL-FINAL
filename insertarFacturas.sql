@@ -15,7 +15,7 @@ BEGIN
 END //
 DELIMITER ;
 
-DROP PROCEDURE insertar_factura;
+-- DROP PROCEDURE insertar_factura;
 DELIMITER //
 CREATE FUNCTION cargar_facturas()
 RETURNS VARCHAR(50)
