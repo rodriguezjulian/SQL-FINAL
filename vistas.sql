@@ -74,7 +74,7 @@ ON A.idArticulo  = O.idArticulo
 order by idFactura asc;
 ;
 
-SELECT  * FROM vw_ClientesV3;
+SELECT  * FROM vw_ClientesV3; 
 SELECT  * FROM vw_VendedoresV1;
 SELECT  * FROM vw_ArticulosV1;
 SELECT  * FROM vw_ordenes;

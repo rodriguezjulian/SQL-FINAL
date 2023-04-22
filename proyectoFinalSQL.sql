@@ -1,3 +1,4 @@
+CREATE DATABASE proyecto_final;
 use proyecto_final;
 
 CREATE TABLE metodosPago (
