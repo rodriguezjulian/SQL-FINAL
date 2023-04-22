@@ -97,4 +97,4 @@ insert into cliente (nombre , cuit_Cuil , idMetodoPago , idZonaGeografica , idCo
 insert into cliente (nombre , cuit_Cuil , idMetodoPago , idZonaGeografica , idCondicionFiscal) values ('Patrizius', '7778363305', 1, 4, 1);
 insert into cliente (nombre , cuit_Cuil , idMetodoPago , idZonaGeografica , idCondicionFiscal) values ('Brit', '6941221682', 4, 2, 2);
 insert into cliente (nombre , cuit_Cuil , idMetodoPago , idZonaGeografica , idCondicionFiscal) values ('Athena', '7047366873', 2, 4, 1);
--- insert into cliente (nombre , cuit_Cuil , idMetodoPago , idZonaGeografica , idCondicionFiscal) values ('Fin', '3035319693', 1, 3, 2);
+insert into cliente (nombre , cuit_Cuil , idMetodoPago , idZonaGeografica , idCondicionFiscal) values ('Fin', '3035319693', 1, 3, 2);
