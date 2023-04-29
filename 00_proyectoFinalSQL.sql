@@ -38,6 +38,7 @@ precio float,
 foreign key (vendId) references vendedor (vendId),
 PRIMARY KEY (idArticulo)
 );
+
 CREATE TABLE cliente (
 idCliente INT NOT NULL AUTO_INCREMENT,
 nombre varchar(30),
@@ -73,11 +74,31 @@ foreign key (idOrden) references orden (idOrden),
 PRIMARY KEY (idFactura) -- tuve que definirla como Pk para que me deje crear la tabla
 );
 
+CREATE TABLE factura_backUp (
+  idFactura int NOT NULL,
+  idOrden int,
+  stockAfacturar int,
+  valorTotal float,
+  fecha_modificacion date,
+  hora_modificacion time,
+  usuario_modificacion varchar(50)
+);
+CREATE TABLE articulo_backUp (
+  idArticulo int NOT NULL,
+  vendId int,
+  descripcionArticulo varchar(50),
+  color varchar(30),
+  stock int,
+  precio float,
+  fecha_modificacion date,
+  hora_modificacion time,
+  usuario_modificacion varchar(50)
+);
 /*DROP TABLE factura;
  DROP TABLE orden;
  DROP TABLE cliente;
  DROP TABLE articulo;
- DROP TABLE vendedor;
+ DROP TABLE vendedor;*/
 -- TRUNCATE TABLE cliente;
 
 -- select * from condificionFiscal;
@@ -88,9 +109,5 @@ PRIMARY KEY (idFactura) -- tuve que definirla como Pk para que me deje crear la 
 -- select * from articulo;
 -- select * from orden;
 -- select * from factura;
-*/
-
-
-
 
 

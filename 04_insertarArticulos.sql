@@ -99,3 +99,4 @@ insert into articulo (vendId , descripcionArticulo , color , stock , precio) val
 insert into articulo (vendId , descripcionArticulo , color , stock , precio) values (10, 'Trencher', 'Goldenrod', 40, 908.64);
 insert into articulo (vendId , descripcionArticulo , color , stock , precio) values (4, 'Backhoe', 'Blue', 6, 646.75);
 insert into articulo (vendId , descripcionArticulo , color , stock , precio) values (13, 'Scraper', 'Green', 43, 1012.01);
+insert into articulo (vendId , descripcionArticulo , color , stock , precio) values (13, 'Scraper', 'Green', 43, 1012.01);
