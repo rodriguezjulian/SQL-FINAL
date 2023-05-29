@@ -1,21 +1,5 @@
 use proyecto_final;
 
-CREATE VIEW vw_Clientes AS
-(select idCliente, nombre, cuit_cuil, case when idMetodoPago = 1 then 'Credito VISA' 
-	  when idCondicionFiscal = 2 then 'Debito VISA' 
-      when idCondicionFiscal = 3 then 'Credito Mastercard'
-     when idCondicionFiscal = 4 then 'Cripto Binance' end Metodo_Pago
-from cliente) ;
-/*
--- FUNCIONA
- CREATE VIEW vw_ClientesV2 AS
-SELECT C.idCliente, C.nombre, C.cuit_cuil,Z.descripcionZonaGeografica
-FROM cliente AS C
-INNER JOIN zonaGeografica AS Z
-ON C.idZonaGeografica = Z.idZonaGeografica
-;
-SELECT  * FROM vw_Clientes;*/
-
 CREATE VIEW vw_ClientesV3 AS
 SELECT C.idCliente, C.nombre, C.cuit_cuil,Z.descripcionZonaGeografica , CF.descripcionCondicionFiscal, MP.metodo,MP.descripcion
 FROM cliente AS C
